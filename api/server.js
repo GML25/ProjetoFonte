@@ -40,7 +40,7 @@ app.post('/User/Create', (req, res) => {
         }
 
         db.Users.push(payload);
-
+            console.log(payload)
         res.sendStatus(200);
     }
     catch(e){
